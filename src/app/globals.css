@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply bg-green-700 text-white h-full;
+}
+
+.pixelated {
+    image-rendering: pixelated;
+}
+
+.font-gamer-bold {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.border-emboss {
+    border-left: solid white 1px;
+    border-top: solid white 1px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.border-emboss-invert {
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+    border-right: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+.window {
+    @apply border-emboss bg-white p-6 outline-gray-500 text-black outline-4 outline;
+}
